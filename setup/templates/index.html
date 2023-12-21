@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nimblent - Setup</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <form method="post">
+        <div class="login">
+            <!-- username password POST -->
+            <p>Configuration de NimblENT</p>
+            <input spellcheck="false" class="text" type="text" name="schoolname" placeholder="nom de l'établissement" required/>
+            <input spellcheck="false" class="text" type="text" name="username" placeholder="code OGEC" required/>
+            <input spellcheck="false" class="text" type="password" name="password" placeholder="mot de passe" required/>
+            <input spellcheck="false" class="text" type="password" name="passwordconf" placeholder="confirmer mot de passe" required/>
+            <div class="buttons">
+                <input class="help" type="button" value="Aide" onclick="window.location.href=`https://github.com/noappertBD/Nimblent`"/>
+                <input class="button" type="submit" value="Se connecter" />
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
