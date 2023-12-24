@@ -12,9 +12,11 @@
 
 <body>
     <form method="post">
+        
         <div class="login">
             <!-- username password POST -->
-            <p>Configuration de NimblENT</p>
+            <h1>Bienvenue 👋</h1>
+            <h2>Configurez votre environement NimblENT</h2>
             <input spellcheck="false" class="text" type="text" name="schoolname" placeholder="nom de l'établissement" required/>
             <input spellcheck="false" class="text" type="text" name="username" placeholder="code OGEC" required/>
             <input spellcheck="false" class="text" type="password" name="password" placeholder="mot de passe" required/>
@@ -24,6 +26,8 @@
                 <input class="button" type="submit" value="Se connecter" />
             </div>
         </div>
+        <img class="background" src="{% static 'images/background.svg' %}">
+
     </form>
 </body>
 

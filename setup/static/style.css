@@ -2,7 +2,7 @@
 
 * {
     font-family: 'Poppins', sans-serif;
-    transition: 0.3s ease-in-out;
+    transition: 0.15s ease-in-out;
 }
 
 p {
@@ -23,10 +23,10 @@ form {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #4b91b1;
 }
 
 div.login {
+    z-index: 99;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,14 +39,19 @@ div.login {
 }
 
 div.buttons {
+    width: 100%;
     margin-top: 15px;
     display: flex;
     gap: 10px;
 }
 
+div.buttons > input {
+    flex: 1;
+}
+
 input.text {
     height: 40px;
-    width: 345px;
+    width: 100%;
     padding: 0;
     margin: 0;
     border-radius: 5px;
@@ -62,11 +67,10 @@ input.text:focus {
     border-width: 0 0 5px;
     border-color: #4b91b1;
     font-weight: bold
-  }
+}
 
 input.help {
     height: 34.5px;
-    width: 167.5px;
     align-self: flex-start;
     padding: 0;
     margin: 0;
@@ -79,12 +83,11 @@ input.help {
 
 input.button {
     height: 34.5px;
-    width: 167.5px;
     align-self: flex-end;
     padding: 0;
     margin: 0;
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     border-color: #4b91b1;
     border-radius: 20px;
     box-sizing: border-box;
@@ -102,4 +105,23 @@ input.button:hover {
     color: #4b91b1;
     background-color: #FFFFFF;
     font-weight: bold
+}
+
+h1 {
+    margin: 0;
+    width: 100%;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+img.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-image: cover;
+
 }
