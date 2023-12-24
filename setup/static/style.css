@@ -5,6 +5,14 @@
     transition: 0.15s ease-in-out;
 }
 
+body {
+    background: url(./images/background.svg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 p {
     margin: -5px 0 0 0;
     padding: 0;
@@ -45,7 +53,7 @@ div.buttons {
     gap: 10px;
 }
 
-div.buttons > input {
+div.buttons>input {
     flex: 1;
 }
 
@@ -94,7 +102,7 @@ input.button {
     background-color: #4b91b1;
     color: #FFFFFF;
     cursor: pointer;
-    
+
 }
 
 input.help:hover {
